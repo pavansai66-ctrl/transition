@@ -1,0 +1,59 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(116, 54, 73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.skill{
+    display: flex;
+    gap: 20px;
+}
+.container{
+    background-color: rgb(47, 131, 146);
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(32, 23, 23);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+.container h1{
+    font-size: 20px;
+    color: blueviolet;
+}
+.container p{
+    font-weight: bold;
+    color: chartreuse;
+}
+.container button{
+    font-size: 10PX;
+    color: crimson;
+}
+
+.container:hover{
+    background-color: darkmagenta;
+}
+.container button:hover{
+    background-color: gold;
+    border-radius: 8px;
+
+}
+.circle{
+    width:100px;
+    height:100px;
+    background-color: blue;
+    animation: grow 2s infinite alternate;
+}
+@keyframes grow{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
